@@ -120,7 +120,7 @@ com.adm.lite/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Alexandr-SPV/active-directory-apk.git
+git clone https://github.com/aleks-spv/ad_manager_lite.git
 cd active-directory-apk
 
 # Debug build
