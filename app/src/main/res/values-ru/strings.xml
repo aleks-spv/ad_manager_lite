@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">AD Менеджер Lite</string>
+
+    <!-- Navigation -->
+    <string name="nav_servers">Серверы</string>
+    <string name="nav_connect">Подключение</string>
+    <string name="nav_users">Пользователи</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Server Editor -->
+    <string name="server_add">Добавить сервер</string>
+    <string name="server_edit">Редактировать сервер</string>
+    <string name="server_name">Название сервера</string>
+    <string name="server_host">Хост</string>
+    <string name="server_port">Порт</string>
+    <string name="server_base_dn">Base DN</string>
+    <string name="server_bind_dn">Bind DN</string>
+    <string name="server_tls_mode">Режим TLS</string>
+    <string name="server_remember_password">Запомнить пароль</string>
+    <string name="server_save">Сохранить</string>
+    <string name="server_delete">Удалить</string>
+    <string name="server_delete_confirm">Вы уверены, что хотите удалить этот сервер?</string>
+    <string name="server_password_placeholder">Пароль</string>
+
+    <!-- Connect -->
+    <string name="connect_password">Пароль</string>
+    <string name="connect_bind">Подключить</string>
+    <string name="connect_disconnect">Отключить</string>
+    <string name="connect_status_disconnected">Отключено</string>
+    <string name="connect_status_connecting">Подключение\u2026</string>
+    <string name="connect_status_connected">Подключено как %1$s</string>
+    <string name="connect_status_failed">Ошибка подключения</string>
+
+    <!-- Users -->
+    <string name="users_search_hint">Поиск пользователей\u2026</string>
+    <string name="users_title">Пользователь</string>
+    <string name="users_no_results">Пользователи не найдены</string>
+    <string name="users_truncated">Результаты обрезаны. Уточните запрос.</string>
+    <string name="users_load_more">Загрузить ещё</string>
+    <string name="users_disabled">Отключён</string>
+    <string name="users_locked">Заблокирован</string>
+    <string name="users_unlocked">Разблокирован</string>
+    <string name="users_enabled">Включён</string>
+    <string name="users_mail">Эл. почта</string>
+    <string name="users_groups">Группы</string>
+    <string name="groups_count">%1$d групп(ы)</string>
+    <string name="groups_empty">Группы не назначены</string>
+    <string name="membership_groups">Членство в группах (%1$d)</string>
+    <string name="users_dn">DN</string>
+    <string name="users_name">Имя</string>
+    <string name="users_login">Логин</string>
+
+    <!-- Actions -->
+    <string name="action_change_password">Сменить пароль</string>
+    <string name="action_modify_groups">Изменить группы</string>
+    <string name="action_rename_user">Переименовать</string>
+    <string name="action_first_name">Имя</string>
+    <string name="action_last_name">Фамилия</string>
+    <string name="action_rename_ok">Имя обновлено</string>
+    <string name="action_admin_reset">Сброс администратором</string>
+    <string name="action_self_change">Смена пользователем</string>
+    <string name="action_old_password">Старый пароль</string>
+    <string name="action_new_password">Новый пароль</string>
+    <string name="action_confirm_password">Подтвердите пароль</string>
+    <string name="action_apply">Применить</string>
+    <string name="action_change_password_ok">Пароль изменён</string>
+    <string name="action_groups_ok">Группы обновлены</string>
+    <string name="action_groups_partial_ok">Обновлено %1$s из %2$s групп(ы)</string>
+    <string name="action_toggle_ok">Статус пользователя изменён</string>
+    <string name="action_apply_ok">Настройки применены</string>
+    <string name="action_unlock_account">Разблокировать учётную запись</string>
+    <string name="action_unlock_ok">Учётная запись разблокирована</string>
+    <string name="action_ok">ОК</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_copy">Копировать</string>
+    <string name="action_add_group">Добавить в группу</string>
+    <string name="action_remove_group">Удалить из группы</string>
+    <string name="action_search_groups">Поиск групп…</string>
+    <string name="action_searching">Поиск…</string>
+    <string name="action_back">Назад</string>
+    <string name="action_new_cn">Новый CN</string>
+    <string name="action_new_sam">Новый sAMAccountName</string>
+    <string name="action_new_upn">Новый UPN</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_security">Безопасность</string>
+    <string name="settings_network">Сеть</string>
+    <string name="settings_secure_channel">Требовать защищённый канал для смены пароля</string>
+    <string name="settings_secure_channel_warning">Пароль может передаваться без шифрования</string>
+    <string name="plain_text_warning">Пароль передаётся открытым текстом</string>
+    <string name="settings_trust_all">Доверять всем сертификатам</string>
+    <string name="settings_trust_all_warning">Отключает проверку сертификатов. Только для тестирования!</string>
+    <string name="settings_connect_timeout">Таймаут подключения (мс)</string>
+    <string name="settings_response_timeout">Таймаут ответа (мс)</string>
+    <string name="unit_millis">мс</string>
+    <string name="settings_custom_ca">Пользовательский CA-сертификат (PEM)</string>
+    <string name="settings_app_version">Версия приложения</string>
+
+    <!-- Settings - Import/Export -->
+    <string name="settings_data">Данные</string>
+    <string name="settings_export">Экспорт</string>
+    <string name="settings_import">Импорт</string>
+    <string name="export_success">Резервная копия экспортирована</string>
+    <string name="export_error">Ошибка экспорта: %1$s</string>
+    <string name="import_success">Импортировано серверов: %1$d</string>
+    <string name="import_error">Ошибка импорта: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_credentials">Неверные учётные данные</string>
+    <string name="error_password_never_expires_and_force">Нельзя сочетать «Пароль не истекает» и «Сменить при входе»</string>
+
+    <!-- Validation errors -->
+    <string name="error_invalid_host">Неверный хост</string>
+    <string name="error_invalid_port">Неверный порт</string>
+    <string name="error_invalid_base_dn">Неверный Base DN</string>
+    <string name="error_invalid_bind_dn">Неверный Bind DN</string>
+    <string name="error_invalid_new_cn">Неверное CN</string>
+    <string name="error_invalid_sam_account_name">Неверное sAMAccountName</string>
+    <string name="error_passwords_do_not_match">Пароли не совпадают</string>
+    <string name="error_account_disabled">Учётная запись отключена</string>
+    <string name="error_account_locked">Учётная запись заблокирована</string>
+    <string name="error_password_policy">Пароль не соответствует политике</string>
+    <string name="error_wrong_old_password">Старый пароль неверен</string>
+    <string name="error_must_change_password">Необходимо сменить пароль</string>
+    <string name="error_insufficient_rights">Недостаточно прав</string>
+    <string name="error_not_found">Не найдено</string>
+    <string name="error_server_mismatch">Выполнено подключение к другому серверу. Переподключитесь и повторите.</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_credentials_reentered">Сохранённый пароль больше не читается. Введите его заново.</string>
+    <string name="error_insecure_channel">Смена пароля требует защищённый канал</string>
+    <string name="error_timeout">Операция превысила таймаут</string>
+
+    <!-- Error hints -->
+    <string name="error_hint_network">Сетевая ошибка. Проверьте подключение и адрес сервера</string>
+    <string name="error_hint_tls">Ошибка рукопожатия TLS/SSL. Проверьте настройки сертификатов</string>
+
+    <!-- Error details toggle -->
+    <string name="error_show_details">Показать подробности</string>
+    <string name="error_hide_details">Скрыть подробности</string>
+<string name="error_copy">Копировать ошибку</string>
+
+    <!-- Accessibility -->
+    <string name="connect_toggle_password_visibility">Показать/скрыть пароль</string>
+
+    <!-- Account Properties -->
+    <string name="action_account_properties">Свойства</string>
+    <string name="action_force_password_change">Смена пароля при входе</string>
+    <string name="action_password_never_expires">Пароль никогда не истекает</string>
+    <string name="action_user_cannot_change_password">Пользователь не может сменить пароль</string>
+    <string name="action_toggle_enabled">Отключить/Включить</string>
+    <string name="action_toggle_enable">Включить</string>
+    <string name="action_toggle_disable">Отключить</string>
+    <string name="action_confirm_enable">Включить пользователя?</string>
+    <string name="action_confirm_disable">Отключить пользователя?</string>
+
+    <!-- Modify Groups / Rename extras -->
+    <string name="action_add_group_dn">DN группы для добавления</string>
+    <string name="action_rename_explanation">Изменение CN, sAMAccountName или UPN переименует объект пользователя в Active Directory.</string>
+
+    <!-- Validators -->
+    <string name="validation_required">Обязательное поле</string>
+    <string name="validation_invalid_host">Неверный адрес хоста</string>
+    <string name="validation_invalid_port">Порт должен быть от 1 до 65535</string>
+    <string name="validation_invalid_dn">Неверный формат DN</string>
+    <string name="validation_passwords_dont_match">Пароли не совпадают</string>
+</resources>

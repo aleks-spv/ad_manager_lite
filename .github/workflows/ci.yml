@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Test, lint, assemble
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # The whole toolchain (JDK 21, Android SDK 37, Gradle 9.6) lives in the
+      # Docker image defined in build-env/, so CI runs exactly like a local build.
+      - name: Build toolchain image
+        run: docker build -t adm-build:local build-env
+
+      - name: Unit tests
+        run: ./build-env/test.sh
+
+      - name: Lint
+        if: always()
+        run: ./build-env/lint.sh
+
+      - name: Assemble debug APK
+        if: always()
+        run: ./build-env/build.sh
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: |
+            app/build/reports/tests/
+            app/build/reports/lint-results-*.html
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 14

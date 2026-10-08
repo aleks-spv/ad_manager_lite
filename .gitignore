@@ -1,0 +1,44 @@
+# Codegraph database and generated files
+.codegraph/
+
+# APK files
+*.apk
+
+# Android / Gradle
+build/
+.gradle/
+build-env/.gradle/
+build-env/gradle-home/
+build-env/home/
+build-env/logs/
+build-env/*_log.txt
+local.properties
+*.iml
+.idea/
+.cxx/
+captures/
+*.jks
+*.keystore
+*.hprof
+.kotlin/
+
+# Secrets
+keystore.properties
+signing.properties
+*.pem
+
+# Room schema exports
+
+# Temp / junk
+*.log
+*.tmp
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Agent workspace
+.omo/
+.opencode/
+AGENTS.md

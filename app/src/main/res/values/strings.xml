@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">AD Manager Lite</string>
+
+    <!-- Navigation -->
+    <string name="nav_servers">Servers</string>
+    <string name="nav_connect">Connect</string>
+    <string name="nav_users">Users</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Server Editor -->
+    <string name="server_add">Add Server</string>
+    <string name="server_edit">Edit Server</string>
+    <string name="server_name">Server Name</string>
+    <string name="server_host">Host</string>
+    <string name="server_port">Port</string>
+    <string name="server_base_dn">Base DN</string>
+    <string name="server_bind_dn">Bind DN</string>
+    <string name="server_tls_mode">TLS Mode</string>
+    <string name="server_remember_password">Remember Password</string>
+    <string name="server_save">Save</string>
+    <string name="server_delete">Delete</string>
+    <string name="server_delete_confirm">Are you sure you want to delete this server?</string>
+    <string name="server_password_placeholder">Password</string>
+
+    <!-- Connect -->
+    <string name="connect_password">Password</string>
+    <string name="connect_bind">Bind</string>
+    <string name="connect_disconnect">Disconnect</string>
+    <string name="connect_status_disconnected">Disconnected</string>
+    <string name="connect_status_connecting">Connecting\u2026</string>
+    <string name="connect_status_connected">Connected as %1$s</string>
+    <string name="connect_status_failed">Connection failed</string>
+
+    <!-- Users -->
+    <string name="users_search_hint">Search users\u2026</string>
+    <string name="users_title">User</string>
+    <string name="users_no_results">No users found</string>
+    <string name="users_truncated">Results truncated. Please refine your search.</string>
+    <string name="users_load_more">Load more</string>
+    <string name="users_disabled">Disabled</string>
+    <string name="users_locked">Locked</string>
+    <string name="users_unlocked">Unlocked</string>
+    <string name="users_enabled">Enabled</string>
+    <string name="users_mail">Email</string>
+    <string name="users_groups">Groups</string>
+    <string name="groups_count">%1$d groups</string>
+    <string name="groups_empty">No groups assigned</string>
+    <string name="membership_groups">Group membership (%1$d)</string>
+    <string name="users_dn">DN</string>
+    <string name="users_name">Name</string>
+    <string name="users_login">Login</string>
+
+    <!-- Actions -->
+    <string name="action_change_password">Change Password</string>
+    <string name="action_modify_groups">Modify Groups</string>
+    <string name="action_rename_user">Rename</string>
+    <string name="action_first_name">First Name</string>
+    <string name="action_last_name">Last Name</string>
+    <string name="action_rename_ok">Name updated</string>
+    <string name="action_admin_reset">Admin Reset</string>
+    <string name="action_self_change">Self Change</string>
+    <string name="action_old_password">Old Password</string>
+    <string name="action_new_password">New Password</string>
+    <string name="action_confirm_password">Confirm Password</string>
+    <string name="action_apply">Apply</string>
+    <string name="action_change_password_ok">Password changed</string>
+    <string name="action_groups_ok">Groups updated</string>
+    <string name="action_groups_partial_ok">Updated %1$s of %2$s groups</string>
+    <string name="action_toggle_ok">User status changed</string>
+    <string name="action_apply_ok">Settings applied</string>
+    <string name="action_unlock_account">Unlock Account</string>
+    <string name="action_unlock_ok">Account unlocked</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_add_group">Add to Group</string>
+    <string name="action_remove_group">Remove from Group</string>
+    <string name="action_search_groups">Search groups…</string>
+    <string name="action_searching">Searching…</string>
+    <string name="action_back">Back</string>
+    <string name="action_new_cn">New CN</string>
+    <string name="action_new_sam">New sAMAccountName</string>
+    <string name="action_new_upn">New UPN</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_network">Network</string>
+    <string name="settings_secure_channel">Require Secure Channel for Password Change</string>
+    <string name="settings_secure_channel_warning">Password may be sent unencrypted</string>
+    <string name="plain_text_warning">Password is sent in clear text</string>
+    <string name="settings_trust_all">Trust All Certificates</string>
+    <string name="settings_trust_all_warning">This disables certificate verification. Use only for testing!</string>
+    <string name="settings_connect_timeout">Connect Timeout (ms)</string>
+    <string name="settings_response_timeout">Response Timeout (ms)</string>
+    <string name="unit_millis">ms</string>
+    <string name="settings_custom_ca">Custom CA Certificate (PEM)</string>
+    <string name="settings_app_version">App Version</string>
+
+    <!-- Settings - Import/Export -->
+    <string name="settings_data">Data</string>
+    <string name="settings_export">Export</string>
+    <string name="settings_import">Import</string>
+    <string name="export_success">Backup exported successfully</string>
+    <string name="export_error">Export failed: %1$s</string>
+    <string name="import_success">Imported %1$d server(s)</string>
+    <string name="import_error">Import failed: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_credentials">Invalid credentials</string>
+    <string name="error_password_never_expires_and_force">Cannot combine "Password never expires" with "Change at next logon"</string>
+
+    <!-- Validation errors -->
+    <string name="error_invalid_host">Invalid host</string>
+    <string name="error_invalid_port">Invalid port</string>
+    <string name="error_invalid_base_dn">Invalid base DN</string>
+    <string name="error_invalid_bind_dn">Invalid bind DN</string>
+    <string name="error_invalid_new_cn">Invalid CN</string>
+    <string name="error_invalid_sam_account_name">Invalid sAMAccountName</string>
+    <string name="error_passwords_do_not_match">Passwords do not match</string>
+    <string name="error_account_disabled">Account is disabled</string>
+    <string name="error_account_locked">Account is locked</string>
+    <string name="error_password_policy">Password does not meet policy requirements</string>
+    <string name="error_wrong_old_password">Old password is incorrect</string>
+    <string name="error_must_change_password">You must change your password</string>
+    <string name="error_insufficient_rights">Insufficient rights</string>
+    <string name="error_not_found">Not found</string>
+    <string name="error_server_mismatch">Connected to a different server. Reconnect and try again.</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_credentials_reentered">Saved password is no longer readable. Enter it again.</string>
+    <string name="error_insecure_channel">Password change requires a secure channel</string>
+    <string name="error_timeout">Operation timed out</string>
+
+    <!-- Error hints -->
+    <string name="error_hint_network">Network error. Check connectivity and server address</string>
+    <string name="error_hint_tls">TLS/SSL handshake failed. Check certificate configuration</string>
+
+    <!-- Error details toggle -->
+    <string name="error_show_details">Show details</string>
+    <string name="error_hide_details">Hide details</string>
+<string name="error_copy">Copy error</string>
+
+    <!-- Accessibility -->
+    <string name="connect_toggle_password_visibility">Toggle password visibility</string>
+
+    <!-- Account Properties -->
+    <string name="action_account_properties">Properties</string>
+    <string name="action_force_password_change">Force password change</string>
+    <string name="action_password_never_expires">Password never expires</string>
+    <string name="action_user_cannot_change_password">User cannot change password</string>
+    <string name="action_toggle_enabled">Disable/Enable</string>
+    <string name="action_toggle_enable">Enable</string>
+    <string name="action_toggle_disable">Disable</string>
+    <string name="action_confirm_enable">Enable this user?</string>
+    <string name="action_confirm_disable">Disable this user?</string>
+
+    <!-- Modify Groups / Rename extras -->
+    <string name="action_add_group_dn">Group DN to add</string>
+    <string name="action_rename_explanation">Changing the CN, sAMAccountName, or UPN will rename the user object in Active Directory.</string>
+
+    <!-- Validators -->
+    <string name="validation_required">This field is required</string>
+    <string name="validation_invalid_host">Invalid host address</string>
+    <string name="validation_invalid_port">Port must be between 1 and 65535</string>
+    <string name="validation_invalid_dn">Invalid DN format</string>
+    <string name="validation_passwords_dont_match">Passwords do not match</string>
+</resources>

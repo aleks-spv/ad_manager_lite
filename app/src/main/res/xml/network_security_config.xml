@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Starting with API 28, cleartext traffic is blocked by default. This flag governs the
+    cleartext HTTP stack only (OkHttp, WebView, network security config). Plain LDAP on
+    port 389 is NOT governed by it: LDAP is a raw TCP socket, not HTTP, so the connection is
+    established regardless of cleartextTrafficPermitted. LDAP traffic is protected only by the
+    app's own TlsMode setting (see SettingsStore.requireSecureChannelForPassword).
+
+    src="user" is enabled so that CA certificates installed by the user in the
+    system trust store are available for LDAPS connections.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
